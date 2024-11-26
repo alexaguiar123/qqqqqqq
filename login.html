@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de login para acessar o sistema Pineapple EcoSense.">
+    <title>Login - Pineapple EcoSense</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #D8BE96;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        section {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group label {
+            font-size: 1.1em;
+        }
+
+        .form-group input {
+            font-size: 1.2em;
+        }
+
+        .btn-primary {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #333;
+        }
+
+        .btn-link {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Login - Pineapple EcoSense</h1>
+        <p>Por favor, insira seu nome e e-mail para acessar a plataforma.</p>
+    </header>
+
+    <section>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required>
+            </div>
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+
+        <div id="monitoramentoBtn" style="display:none; margin-top: 20px;">
+            <a href="monitoramento.html" class="btn-link">Ir para o Monitoramento</a>
+        </div>
+
+        <!-- Botão para a página de ajuda -->
+        <div style="margin-top: 20px;">
+            <a href="ajuda.html" class="btn-link">Ir para a Página de Ajuda</a>
+        </div>
+    </section>
+
+    
+    <script>
+        // Exemplo simples de validação do formulário e exibição do botão de acesso ao monitoramento
+        const loginForm = document.getElementById('loginForm');
+        const monitoramentoBtn = document.getElementById('monitoramentoBtn');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Validando os campos
+            if (name && email) {
+                // Exibe o botão para ir para o monitoramento após o login
+                monitoramentoBtn.style.display = 'block';
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

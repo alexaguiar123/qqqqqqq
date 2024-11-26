@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ajuda para o sistema Pineapple EcoSense.">
+    <title>Ajuda - Pineapple EcoSense</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> <!-- Ícones Font Awesome -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #D8BE96;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4b4b4b;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #4b4b4b;
+            margin-top: 20px;
+        }
+
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 2em;
+            color: #4b4b4b;
+            margin-right: 10px;
+        }
+
+        .btn-custom {
+            background-color: #4b4b4b;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #333;
+        }
+
+        .help-section {
+            margin-bottom: 30px;
+        }
+
+        .help-section img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .icon {
+                font-size: 1.5em;
+            }
+
+            .btn-custom {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Página de Ajuda - Pineapple EcoSense</h1>
+        <p>Encontre informações sobre como usar o sistema e solucionar dúvidas.</p>
+    </header>
+
+    <section>
+        <!-- Como Funciona -->
+        <div class="help-section">
+            <h2>Como Funciona?</h2>
+            <p>O Pineapple EcoSense monitora gases em tempo real, utilizando sensores conectados via **cabo USB**. Com a plataforma, você pode visualizar os dados do monitoramento diretamente no painel de controle.</p>
+        </div>
+
+        <!-- Passos Iniciais -->
+        <div class="help-section">
+            <h2>Passos Iniciais</h2>
+            <ul>
+                <li><i class="fas fa-check-circle icon"></i> Conecte os sensores ao computador usando o cabo USB.</li>
+                <li><i class="fas fa-check-circle icon"></i> Faça login com seu nome e e-mail.</li>
+                <li><i class="fas fa-check-circle icon"></i> Acesse o painel de monitoramento para visualizar os dados.</li>
+            </ul>
+        </div>
+
+        <!-- Como Configurar -->
+        <div class="help-section">
+            <h2>Como Configurar</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Conectando os Sensores</h3>
+                    <p>Para iniciar o monitoramento, basta conectar os sensores ao computador via cabo USB. O sistema detectará automaticamente os dispositivos conectados.</p>
+                    <a href="monitoramento.html" class="btn-custom">Ir para o Monitoramento</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perguntas Frequentes -->
+        <div class="help-section">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle icon"></i> Como posso visualizar os dados do sensor?</h3>
+                <p>Os dados dos sensores são exibidos em tempo real no painel de monitoramento da plataforma.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle icon"></i> O que fazer se o sensor não for detectado?</h3>
+                <p>Verifique se o cabo USB está corretamente conectado e se os drivers do sistema estão atualizados.</p>
+            </div>
+        </div>
+
+    </section>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
